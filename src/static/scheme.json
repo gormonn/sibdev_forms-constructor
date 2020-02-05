@@ -1,0 +1,59 @@
+{
+  "name": "Название схемы",
+  "fields": [
+    {
+      "key": "login",
+      "label": "Логин",
+      "type": "string",
+      "validation": {
+        "required": true,
+        "min": "6"
+      }
+    },
+    {
+      "key": "password",
+      "label": "Пароль",
+      "type": "password",
+      "validation": {
+        "required": true,
+        "pattern": "[0-9]",
+        "max": "255"
+      }
+    },
+    {
+      "key": "role",
+      "label": "Роль",
+      "type": "select",
+      "validation": {
+        "required": true
+      },
+      "options": [
+        {
+          "key": "admin",
+          "value": "Администратор"
+        },
+        {
+          "key": "manager",
+          "value": "Менеджер"
+        }
+      ]
+    },
+    {
+      "key": "age",
+      "label": "Возраст",
+      "type": "number",
+      "validation": {
+        "required": false,
+        "min": "18"
+      }
+    },
+    {
+      "key": "notification",
+      "label": "Получать уведомления",
+      "type": "checkbox",
+      "validation": {
+        "required": false
+      }
+    }
+  ]
+}
